@@ -12,7 +12,11 @@
     появлялось сообщение: "вы навели на textarea" -->
 
     <script>
-        
+        let block = document.querySelector("textarea");
+        block.addEventListener("mouseover", textAreaHover);
+        function textAreaHover() {
+            console.log("вы навели на textarea");
+        }
     </script>
 </body>
 </html>
